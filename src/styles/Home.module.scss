@@ -1,0 +1,24 @@
+.main {
+    display: flex;
+    width: 100%;
+    height: 100svh;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.profile {
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: 18px;
+
+    h1, h2 {
+        margin-bottom: 0;
+    }
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}

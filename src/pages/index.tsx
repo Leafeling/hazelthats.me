@@ -8,7 +8,6 @@ const Home = () =>
         <meta name="description" content="Hazel is a software developer working in the development of video games and web applications." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="data:," />
-        <a rel="me" href="https://tech.lgbt/@leafeling">Mastodon</a>
     </Head>
 
     <main className={`${styles.main}`}>

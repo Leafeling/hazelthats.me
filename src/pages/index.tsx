@@ -21,13 +21,22 @@ const Home = () =>
 
             <h2>Game Development</h2>
             <ul className={styles.list}>
-                <li><a target='_blank' href='https://github.com/leafal-io/celesteia'>Celesteia</a>, a 2D sandbox game set on alien planets.</li>
+                <li><a target='_blank' href='https://celesteia.com'>Celesteia</a>, a 2D sandbox game set on alien planets.</li>
             </ul>
 
             <h2>Web Development</h2>
             <ul className={styles.list}>
+                <li><a target='_blank' href='https://theopensource.company/'>The Open Source Company</a>{"'s website."}</li>
                 <li><a target='_blank' href='https://leafal.io/'>leafal.io</a>, a game distribution platform aiming to make gaming more social.</li>
-                <li><a target='_blank' href='https://kards.social/'>Kards</a>, a social media platform.</li>
+                <li><a target='_blank' href='https://playrbase.app/'>PlayrBase</a>, an open-source event and tournament management platform.</li>
+            </ul>
+
+            <h2>Online Presence</h2>
+            <ul className={styles.list}>
+                <li><a target='_blank' href='https://github.com/leafeling'>GitHub</a></li>
+                <li><a target='_blank' href='https://tumblr.com/leafeling'>Tumblr</a></li>
+                <li><a target='_blank' href='https://tech.lgbt/@leafeling'>Mastodon (tech.lgbt)</a></li>
+                <li><a target='_blank' href='https://www.youtube.com/MorganHofmann'>{"YouTube (as 'Morgan')"}</a></li>
             </ul>
         </div>
     </main>

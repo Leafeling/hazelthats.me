@@ -18,6 +18,7 @@ const Home = () =>
                 <a target="_blank" href="https://theopensource.company">software developer at The Open Source Company</a>
                 {", working in the development of video games and web applications."}
             </p>
+            <p>My official name is Morgan, but I prefer Hazel as a calling name.</p>
 
             <h2>Game Development</h2>
             <ul className={styles.list}>

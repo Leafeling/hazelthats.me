@@ -8,6 +8,7 @@ const Home = () =>
         <meta name="description" content="Hazel is a software developer working in the development of video games and web applications." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="data:," />
+        <a rel="me" href="https://tech.lgbt/@leafeling">Mastodon</a>
     </Head>
 
     <main className={`${styles.main}`}>
@@ -35,7 +36,7 @@ const Home = () =>
             <ul className={styles.list}>
                 <li><a target='_blank' href='https://github.com/leafeling'>GitHub</a></li>
                 <li><a target='_blank' href='https://tumblr.com/leafeling'>Tumblr</a></li>
-                <li><a target='_blank' href='https://tech.lgbt/@leafeling'>Mastodon (tech.lgbt)</a></li>
+                <li><a rel='me' target='_blank' href='https://tech.lgbt/@leafeling'>Mastodon (tech.lgbt)</a></li>
                 <li><a target='_blank' href='https://www.youtube.com/MorganHofmann'>{"YouTube (as 'Morgan')"}</a></li>
             </ul>
         </div>

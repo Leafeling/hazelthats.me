@@ -28,16 +28,13 @@ const Home = () =>
             <h2>Web Development</h2>
             <ul className={styles.list}>
                 <li><a target='_blank' href='https://theopensource.company/'>The Open Source Company</a>{"'s website."}</li>
-                <li><a target='_blank' href='https://leafal.io/'>leafal.io</a>, a game distribution platform aiming to make gaming more social.</li>
                 <li><a target='_blank' href='https://playrbase.app/'>PlayrBase</a>, an open-source event and tournament management platform.</li>
             </ul>
 
             <h2>Online Presence</h2>
             <ul className={styles.list}>
                 <li><a target='_blank' href='https://github.com/leafeling'>GitHub</a></li>
-                <li><a target='_blank' href='https://tumblr.com/leafeling'>Tumblr</a></li>
-                <li><a rel='me' target='_blank' href='https://tech.lgbt/@leafeling'>Mastodon (tech.lgbt)</a></li>
-                <li><a target='_blank' href='https://www.youtube.com/MorganHofmann'>{"YouTube (as 'Morgan')"}</a></li>
+                <li><a target='_blank' href='https://twitter.com/hazelthatsme'>No one calls it X</a></li>
             </ul>
         </div>
     </main>

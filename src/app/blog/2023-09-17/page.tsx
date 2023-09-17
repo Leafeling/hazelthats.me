@@ -8,6 +8,10 @@ const postData: any = {
 export const metadata: Metadata = {
     title: postData.title,
     description: postData.description,
+    twitter: {
+        title: postData.title,
+        description: postData.description,
+    }
 }
 
 const Post = () =>

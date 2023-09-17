@@ -3,7 +3,10 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     viewport: "width=device-width, initial-scale=1",
-    icons: "data:,"
+    icons: "data:,",
+    twitter: {
+        site: "hazelthats.me",
+    }
 }
 
 export default function RootLayout({
@@ -17,11 +20,6 @@ export default function RootLayout({
                 <main id='app'>
                     {children}
                 </main>
-                <footer>
-                    <div className='track'>
-                        <a href="https://twitter.com/hazelthatsme">Twitter</a>
-                    </div>
-                </footer>
             </body>
         </html>
     )

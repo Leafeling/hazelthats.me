@@ -5,6 +5,11 @@ import BlogPost from './components/BlogPost';
 export const metadata: Metadata = {
     title: "Hazel, that's me.",
     description: "",
+    twitter: {
+        title: "Hazel, that's me.",
+        description: "",
+        site: "hazelthats.me",
+    }
 }
 
 const Home = () =>

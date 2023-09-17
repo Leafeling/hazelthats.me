@@ -33,6 +33,22 @@ body {
 }
 
 a {
-    color: var(--color-2);
-    &:visited { color: var(--color-4); }
+    color: #aaa;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-size: 1.25em;
+        margin-bottom: .2em;
+    }
+    
+    .content {
+        max-width: 900px;
+        width: 80vw;
+        margin: 1em;
+    }
 }

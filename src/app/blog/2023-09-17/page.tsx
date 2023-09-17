@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-export const postData = {
+const postData: any = {
     title: "Starting a Blog",
     description: "I'm starting a weekly blog for whoever wants to read it."
 }

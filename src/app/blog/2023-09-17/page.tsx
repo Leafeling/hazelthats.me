@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     twitter: {
         title: postData.title,
         description: postData.description,
+        site: "hazelthats.me",
     }
 }
 

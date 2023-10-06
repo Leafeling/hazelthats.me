@@ -16,8 +16,10 @@
     margin: 1em auto;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     max-width: 900px;
     width: 100%;
+
+    gap: 1em;
 }

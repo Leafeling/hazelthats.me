@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const Home = () =>
     <div className={styles.main}>
         <div className={styles.profile}>
-            <h1>{"Hazel, that's me."}</h1>
+            <h1><a href='./name'>Hazel</a>{", that's me."}</h1>
             <span className={styles.sub}>The blog of one girl with too many interests</span>
         </div>
 

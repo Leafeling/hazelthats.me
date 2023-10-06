@@ -25,7 +25,7 @@ const Post = () =>
     `}</p>
     <p>
         {"I'll probably post links to new posts on my "}
-        <a href='https://www.twitter.com/hazelthatsme'>Twitter</a>
+        <a target="_blank" href='https://www.twitter.com/hazelthatsme'>Twitter</a>
         {" (it's not X, no one calls it that), so if you want to keep up to date with this, that's your best bet!"}</p>
     <p>Sincerely, Hazel</p>
 </>

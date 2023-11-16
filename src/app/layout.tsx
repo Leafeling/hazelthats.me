@@ -20,6 +20,11 @@ export default function RootLayout({
                 <main id='app'>
                     {children}
                 </main>
+                <footer>
+                    <a href='https://webring.queercoded.dev/prev?source=hazelthats.me'>
+                        <img src='/qc-88x31.gif' />
+                    </a>
+                </footer>
             </body>
         </html>
     )

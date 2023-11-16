@@ -21,9 +21,10 @@ export default function RootLayout({
                     {children}
                 </main>
                 <footer>
-                    <a href='https://webring.queercoded.dev/prev?source=hazelthats.me'>
-                        <img src='/qc-88x31.gif' />
-                    </a>
+                    <div className='webring-thing' style={{backgroundImage: 'url(/qc-88x31.gif)'}}>
+                        <a href='https://webring.queercoded.dev/prev?source=hazelthats.me'></a>
+                        <a href='https://webring.queercoded.dev/next?source=hazelthats.me'></a>
+                    </div>
                 </footer>
             </body>
         </html>

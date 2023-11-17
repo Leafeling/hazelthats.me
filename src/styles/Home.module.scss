@@ -1,25 +1,44 @@
-.profile {
-    padding: 3em;
+.main {
+    width: 100%;
+    max-width: 1520px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     text-align: center;
 
-    h1 {
-        margin: 0;
+    & > h1 {
+        margin: 5rem;
         font-size: 3em;
+        white-space: no-wrap;
     }
-
-    .sub {
+    
+    & > h2 {
+        margin: 0;
         font-size: 1.25em;
+        white-space: no-wrap;
+        font-weight: normal;
     }
 }
 
-.posts {
-    margin: 1em auto;
-
+.showcase {
     display: flex;
-    flex-direction: column-reverse;
+    text-align: left;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem;
+}
 
-    max-width: 900px;
-    width: 100%;
+.socials {
+    gap: 3em;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    gap: 1em;
+    a {
+        transform: scale(2);
+    }
 }

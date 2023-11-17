@@ -3,7 +3,7 @@ import styles from '@/styles/ProjectTile.module.scss';
 export function ProjectTile({ children, background, links }: {
     children: React.ReactNode,
     background: string,
-    links: React.ReactNode[]
+    links: React.ReactNode
 }) {
     
     return <div className={ styles.tile } style={{ background, backgroundSize: 'cover' }}>

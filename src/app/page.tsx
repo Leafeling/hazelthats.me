@@ -1,3 +1,5 @@
+import * as React from 'react'
+
 import styles from '@/styles/Home.module.scss'
 import { Metadata } from 'next';
 import { ProjectTile } from './components/ProjectTile';
@@ -46,6 +48,13 @@ const Home = () =>
                     A collective advocating for libre software and a web built on transparency, started by two of my friends and myself. With
                     The Open Source Company, I've designed the collective's website, Kards, Playrbase and recently brought leafal.io under its
                     banner.
+                `}</p>
+            </ProjectTile>
+            <ProjectTile background='url(/projects/ruleset.jpg)'>
+                <h1>Dutch SSBU Ruleset</h1>
+                <p>{`
+                    The Dutch Super Smash Bros. Ultimate community plays by the rules set in a unified ruleset. Most tournaments use this
+                    graphic I produced when the ruleset was released. Not very relevant to the rest of my work, but still pretty cool.
                 `}</p>
             </ProjectTile>
         </div>

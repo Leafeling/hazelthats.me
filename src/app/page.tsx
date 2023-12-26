@@ -59,6 +59,14 @@ const Home = () =>
             </ProjectTile>
         </div>
 
+        <h2>{`Here's what I use to get the job done.`}</h2>
+        <div className={styles.languages}>
+            <img
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=leafeling&theme=dark&bg_color=0000&disable_animations=true&hide_border=true"
+                alt="Language statistics, unfortunately can't really grab the content for readability."
+            />
+        </div>
+
         <h2>{`Here's where you can find me.`}</h2>
         <div className={styles.socials}>
             <a href='//github.com/leafeling' target='_blank'>

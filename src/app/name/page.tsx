@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import styles from '@/styles/Blog.module.scss';
+import styles from '@/styles/Name.module.scss';
 
 const postData: any = {
     title: "What's up with your name?",

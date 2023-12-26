@@ -73,11 +73,12 @@ const Home = () =>
 
         <h2>{`Here's what I use to get the job done.`}</h2>
         <div className={styles.languages}>
-            <a href=""></a>
-            <img
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=leafeling&theme=dark&bg_color=0000&disable_animations=true&hide_border=true"
-                alt="Language statistics, unfortunately can't really grab the content for readability."
-            />
+            <a href="https://github.com/anuraghazra/github-readme-stats" target='_blank'>
+                <img
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=leafeling&theme=dark&bg_color=0000&disable_animations=true&hide_border=true"
+                    alt="Language statistics, unfortunately can't really grab the content for readability."
+                />
+            </a>
         </div>
 
         <h2>{`Here's where you can find me.`}</h2>

@@ -31,6 +31,9 @@ const Home = () =>
                     project. The method of managing the project has changed the teaching methods of computer science at the school, acting as
                     an approachable project management method. This project won the school's award for Best Project in the Sciences.
                 `}</p>
+                <i>{`
+                    Game programmed in C#, website made using NextJS (React).
+                `}</i>
             </ProjectTile>
             <ProjectTile background='url(/projects/leafal.jpg)' links={
                 <a href='//www.leafal.io'>Visit leafal.io</a>
@@ -39,6 +42,9 @@ const Home = () =>
                 <p>{`
                     Set to be a next-generation hub for games, allowing users to purchase games, play games and interact with other players.
                 `}</p>
+                <i>{`
+                    Frontend made using NuxtJS (Vue). Backend powered by SurrealDB.
+                `}</i>
             </ProjectTile>
             <ProjectTile background='url(/projects/tosc.jpg)' links={
                 <a href='//theopensource.company'>Visit theopensource.company</a>
@@ -49,6 +55,9 @@ const Home = () =>
                     The Open Source Company, I've designed the collective's website, Kards, Playrbase and recently brought leafal.io under its
                     banner.
                 `}</p>
+                <i>{`
+                    Website made using NextJS (React).
+                `}</i>
             </ProjectTile>
             <ProjectTile background='url(/projects/ruleset.jpg)'>
                 <h1>Dutch SSBU Ruleset</h1>
@@ -56,11 +65,15 @@ const Home = () =>
                     The Dutch Super Smash Bros. Ultimate community plays by the rules set in a unified ruleset. Most tournaments use this
                     graphic I produced when the ruleset was released. Not very relevant to the rest of my work, but still pretty cool.
                 `}</p>
+                <i>{`
+                    Layout made using HTML/CSS.
+                `}</i>
             </ProjectTile>
         </div>
 
         <h2>{`Here's what I use to get the job done.`}</h2>
         <div className={styles.languages}>
+            <a href=""></a>
             <img
                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=leafeling&theme=dark&bg_color=0000&disable_animations=true&hide_border=true"
                 alt="Language statistics, unfortunately can't really grab the content for readability."

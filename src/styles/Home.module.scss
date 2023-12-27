@@ -45,3 +45,21 @@
         transform: scale(2);
     }
 }
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        display: flex;
+        flex: 1;
+        min-width: 200px;
+        max-width: 400px;
+
+        img {
+            width: 100%;
+            filter: saturate(150%)
+        }
+    }
+}

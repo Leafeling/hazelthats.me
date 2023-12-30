@@ -15,11 +15,6 @@ pnpm build
 ```
 
 ```bash
-# Starts production server using site build in /out.
-pnpm start
-```
-
-```bash
 # Validate code formatting, not that it matters, but that's frontend development for you.
 pnpm lint
 

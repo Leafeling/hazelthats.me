@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import styles from '@/styles/Home.module.scss'
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { ProjectTile } from './components/ProjectTile';
 import { SiGithub, SiMastodon } from '@icons-pack/react-simple-icons';
 
@@ -74,7 +75,7 @@ const Home = () =>
         <h2>{`Here's what I use to get the job done.`}</h2>
         <div className={styles.languages}>
             <a href="https://github.com/anuraghazra/github-readme-stats" target='_blank'>
-                <img
+                <Image
                     src="https://github-readme-stats.vercel.app/api/top-langs/?username=leafeling&theme=dark&bg_color=0000&disable_animations=true&hide_border=true&hide_title=true&text_bold=true&langs_count=12&layout=compact"
                     alt="Language statistics, unfortunately can't really grab the content for readability."
                 />

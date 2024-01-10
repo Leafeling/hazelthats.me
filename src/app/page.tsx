@@ -36,17 +36,6 @@ const Home = () =>
                     an approachable project management method. This project won the school's award for Best Project in the Sciences.
                 `}</p>
             </ProjectTile>
-            <ProjectTile background='url(/projects/leafal.jpg)' links={
-                <a href='//www.leafal.io'>Visit leafal.io</a>
-            }>
-                <h1>leafal.io</h1>
-                <i>{`
-                    Frontend made using JavaScript (Vue). Backend powered by SurrealDB.
-                `}</i>
-                <p>{`
-                    Set to be a next-generation hub for games, allowing users to purchase games, play games and interact with other players.
-                `}</p>
-            </ProjectTile>
             <ProjectTile background='url(/projects/tosc.jpg)' links={
                 <a href='//theopensource.company'>Visit theopensource.company</a>
             }>

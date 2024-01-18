@@ -1,0 +1,76 @@
+---
+const { image, links } = Astro.props;
+---
+
+<div class="project">
+    <div class="thumbnail" style={{ backgroundImage: `url(${image})` }}>
+        <div class="filter"></div>
+    </div>
+    <div class="content">
+        <div class="description">
+            <slot />
+        </div>
+        <div class='links'>
+            <slot name='links' />
+        </div>
+    </div>
+</div>
+
+<style>
+    .project {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1em;
+        text-align: left;
+        align-items: stretch;
+        max-width: 600px;
+    }
+
+    .project:hover .filter {
+        backdrop-filter: saturate(100%);
+        background-color: transparent;
+    }
+
+    .project .thumbnail {
+        display: flex;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 1rem;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        background-size: cover;
+    }
+
+    .project .thumbnail .filter {
+        display: flex;
+        flex: 1;
+        background-color: rgba(245, 222, 179, 0.2);
+        backdrop-filter: saturate(0%);
+        transition: 0.2s ease;
+        z-index: 1;
+    }
+
+    .project .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    .project .content h1 {
+        font-size: 2em;
+    }
+
+    .project .content .description {
+        flex: 1;
+    }
+
+    .project .content .links {
+        display: flex;
+        flex-direction: column;
+        margin: 1em 0;
+    }
+</style>

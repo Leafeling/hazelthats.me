@@ -1,22 +1,15 @@
 {
   "name": "hazelthats-me",
-  "version": "0.1.0",
-  "private": true,
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "next": "13.4.19",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "@types/node": "20.3.3",
-    "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.6",
-    "eslint": "8.44.0",
-    "eslint-config-next": "13.4.7",
-    "sass": "^1.67.0",
-    "typescript": "5.1.6"
+    "astro": "^4.2.0"
   }
 }

@@ -1,5 +1,5 @@
 ---
-const { image, links } = Astro.props;
+const { title, image, url, url_text, content } = Astro.props;
 ---
 
 <div class="project">
@@ -8,10 +8,11 @@ const { image, links } = Astro.props;
     </div>
     <div class="content">
         <div class="description">
-            <slot />
+            <h1>{title}</h1>
+            <slot set:html={content} />
         </div>
         <div class='links'>
-            <slot name='links' />
+            <a href={url}>{url_text}</a>
         </div>
     </div>
 </div>
@@ -28,8 +29,8 @@ const { image, links } = Astro.props;
     }
 
     .project:hover .filter {
-        backdrop-filter: saturate(100%);
-        background-color: transparent;
+        backdrop-filter: saturate(100%) !important;
+        background-color: transparent !important;
     }
 
     .project .thumbnail {

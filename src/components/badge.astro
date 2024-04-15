@@ -1,9 +1,9 @@
 ---
-const {src, href, txt} = Astro.props;
+const {src, href} = Astro.props;
 ---
 
 <a href={href} target="_blank" class="badge">
-    <img src={src} title={txt} alt={txt} />
+    <img src={src} />
 </a>
 
 <style>

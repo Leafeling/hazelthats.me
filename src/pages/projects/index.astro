@@ -8,7 +8,7 @@ const projects = await Astro.glob("./*.md");
     <h2>Here's what I've worked on.</h2>
     <div class="showcase">
         {
-            projects.map((project) => (
+            projects.sort((a, b) => a.frontmatter.order > b.frontmatter.order ? -1 : 1).map((project) => (
                 <Project
                     {...project.frontmatter}
                     content={project.compiledContent()}

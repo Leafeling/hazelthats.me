@@ -3,6 +3,7 @@ title: 'The Open Source Company'
 url: 'https://theopensource.company'
 url_text: 'Visit theopensource.company'
 image: /projects/tosc.jpg
+order: 0
 ---
 _Website made using TypeScript and React with the NextJS framework._
 

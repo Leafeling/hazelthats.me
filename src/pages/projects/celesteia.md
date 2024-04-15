@@ -3,6 +3,7 @@ title: 'Celesteia'
 url: 'https://github.com/hazelthatsme/celesteia'
 url_text: 'View the repository'
 image: /projects/celesteia.jpg
+order: 1
 ---
 _Made using C# with the MonoGame framework._
 

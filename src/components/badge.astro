@@ -1,0 +1,14 @@
+---
+const {src, href, txt} = Astro.props;
+---
+
+<a href={href} class="badge">
+    <img src={src} title={txt} alt={txt} />
+</a>
+
+<style>
+    a {
+        color: none;
+        text-decoration: none;
+    }
+</style>

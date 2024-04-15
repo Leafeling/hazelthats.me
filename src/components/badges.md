@@ -1,0 +1,8 @@
+![](/badges/bitwarden.gif)
+![](/badges/button25.gif)
+![](/badges/fedora.gif)
+![](/badges/google_stand.gif)
+![](/badges/knbutton.gif)
+![](/badges/minecraft.gif)
+[![](/badges/qc-88x31.gif)](https://webring.queercoded.dev/)
+![](/badges/transnow2.gif)

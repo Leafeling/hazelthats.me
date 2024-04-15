@@ -1,0 +1,19 @@
+---
+import Project from "../../components/project.astro";
+import Layout from "../../layouts/layout.astro";
+const projects = await Astro.glob("./*.md");
+---
+
+<Layout title="Here's what I've worked on.">
+    <h2>Here's what I've worked on.</h2>
+    <div class="showcase">
+        {
+            projects.map((project) => (
+                <Project
+                    {...project.frontmatter}
+                    content={project.compiledContent()}
+                />
+            ))
+        }
+    </div>
+</Layout>

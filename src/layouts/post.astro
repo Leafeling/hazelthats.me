@@ -13,7 +13,6 @@ const date = new Date(frontmatter.pubDate).toLocaleDateString("en-US", {
         <span class="title">{frontmatter.title}</span>
         <i class="pub">{date}</i>
         <slot />
-        <hr />
     </article>
 </Layout>
 

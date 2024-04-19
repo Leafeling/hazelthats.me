@@ -1,0 +1,12 @@
+---
+import Post from "./post.astro";
+const posts = await Astro.glob("/src/pages/posts/*.md");
+---
+
+<div class="posts">
+    {
+        posts.sort((a, b) => a.frontmatter.pubDate > b.frontmatter.pubDate ? -1 : 1).map((post) => (
+            <Post href={post.url} {...post.frontmatter} />
+        ))
+    }
+</div>

@@ -1,0 +1,26 @@
+---
+import Layout from "./layout.astro";
+const { frontmatter } = Astro.props;
+const date = new Date(frontmatter.pubDate).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+});
+---
+
+<Layout {...frontmatter}>
+    <article>
+        <span class="title">{frontmatter.title}</span>
+        <i class="pub">{date}</i>
+        <slot />
+        <hr />
+    </article>
+</Layout>
+
+<style>
+    article .title {
+        font-size: 2rem;
+        font-weight: bold;
+        display: block;
+    }
+</style>

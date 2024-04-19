@@ -1,8 +1,14 @@
 ---
+import Posts from "../components/posts.astro";
 import Layout from "../layouts/layout.astro";
 import WhoAmI from "./whoami.astro";
 ---
 
-<Layout title="Hazel, that's me.">
+<Layout>
 	<WhoAmI />
+	<hr />
+
+	<h2>Here's what I'm thinking about.</h2>
+	<Posts />
+	<hr />
 </Layout>

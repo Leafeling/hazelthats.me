@@ -1,6 +1,6 @@
 ---
 import Badges from "../components/badges.astro";
-const { title, description } = Astro.props;
+const { title, description, tags } = Astro.props;
 ---
 
 <html lang="en">
@@ -10,15 +10,18 @@ const { title, description } = Astro.props;
         <link rel="icon" type="image/svg+xml" href="data:," />
         <meta name="generator" content={Astro.generator} />
 
-        <title>{title}</title>
+        <title>{title}{title && ' | '} Hazel, that's me.</title>
         <meta name="description" content={description ?? ""} />
+        <meta name="keywords" content={tags} />
     </head>
     <body>
         <div id="content">
             <header>
-                <h1><a href="/name">Hazel</a>, that's me.</h1>
+                <span class="tag"><a href="/name">Hazel</a>, that's me.</span>
                 <div>
-                    <a href="/">Home</a> | <a href="/projects">Projects</a>
+                    <a href="/">Home</a>
+                    |
+                    <a href="/projects">Projects</a>
                 </div>
             </header>
             <main>
@@ -62,14 +65,9 @@ const { title, description } = Astro.props;
         margin: 5rem 0;
     }
 
-    h1 {
-        font-size: 4em;
-        margin: 0;
-    }
-
-    h2 {
-        font-size: 2em;
-        margin: 0;
+    .tag {
+        font-size: 4rem;
+        font-weight: bold;
     }
 
     header, footer {
@@ -79,4 +77,25 @@ const { title, description } = Astro.props;
 	.badges img {
 		margin: 5px;
 	}
+
+    a {
+        color: cyan;
+    }
+
+    a:visited {
+        color: aquamarine;
+    }
+
+    code {
+        background-color: gray;
+        color: white;
+    }
+
+    pre {
+        padding: 1em;
+    }
+
+    pre code {
+        background-color: transparent;
+    }
 </style>

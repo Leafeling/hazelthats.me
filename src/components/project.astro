@@ -10,7 +10,7 @@ const { title, image, url, url_text, content } = Astro.props;
             <slot set:html={content} />
         </div>
         <div class='links'>
-            <a href={url} target="_blank">{url_text}</a>
+            <a href={url}>{url_text}</a>
         </div>
     </div>
 </div>

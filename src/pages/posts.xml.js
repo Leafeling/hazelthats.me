@@ -10,7 +10,6 @@ export async function GET() {
     trailingSlash: false,
     items: posts,
     customData: `
-        <atom:link href="https://hazelthats.me/posts.xml" rel="self" type="application/rss+xml"/>
         <language>en-us</language>
     `
   });

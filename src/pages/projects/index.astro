@@ -2,10 +2,16 @@
 import Project from "../../components/project.astro";
 import Layout from "../../layouts/layout.astro";
 const projects = await Astro.glob("./*.md");
+
+const meta = {
+    title: "Projects",
+    description: "Here's some projects I have or am currently working on!"
+}
 ---
 
-<Layout title="Projects">
+<Layout {...meta}>
     <h2>Here's what I've worked on.</h2>
+    <p>{meta.description}</p>
     <div class="showcase">
         {
             projects.sort((a, b) => a.frontmatter.order > b.frontmatter.order ? -1 : 1).map((project) => (

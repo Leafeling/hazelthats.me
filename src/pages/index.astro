@@ -2,9 +2,13 @@
 import Posts from "../components/posts.astro";
 import Layout from "../layouts/layout.astro";
 import WhoAmI from "./whoami.astro";
+
+const meta = {
+    description: "I love to program! In my day-to-day life I work as a systems administrator."
+}
 ---
 
-<Layout>
+<Layout {...meta}>
 	<WhoAmI />
 	<hr />
 

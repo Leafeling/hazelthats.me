@@ -17,8 +17,8 @@ const { title, image, url, url_text, content } = Astro.props;
 
 <style>
     .project {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: auto 1fr;
         align-items: center;
         gap: 1rem;
         margin: 1rem 0;
@@ -30,5 +30,14 @@ const { title, image, url, url_text, content } = Astro.props;
 
     .project h2 {
         margin: 0;
+    }
+
+    @media (width < 800px) {
+        .project {
+            grid-template-columns: 1fr;
+        }
+        .project .thumbnail {
+            max-height: unset;
+        }
     }
 </style>

@@ -1,19 +1,28 @@
----
-import Badge from '@/components/badge.astro';
+import Badge from "./badge.astro";
+
+type Badge = {
+    src: string;
+    title?: string;
+    href?: string;
+};
+
+const badgeList: Badge[] = [
+    { src: "/badges/88x31.gif", title: "88x31 Badges", href: "//cyber.dabamos.de/88x31" },
+    { src: "/badges/bitwarden.gif" },
+    { src: "/badges/button25.gif" },
+    { src: "/badges/fedora.gif", title: "Fedora", href: "//fedoraproject.org/spins/minimal/download", },
+    { src: "/badges/firefox2.gif" },
+    { src: "/badges/github-check.gif", title: "Github", href: "//github.com/hazelthatsme" },
+    { src: "/badges/gnu-linux.gif", title: "GNU Kernel", href: "//kernel.org" },
+    { src: "/badges/google_stand.gif" },
+    { src: "/badges/knbutton.gif", title: "KDE", href: "//kde.org" },
+    { src: "/badges/internetprivacy.gif" },
+    { src: "/badges/minecraft.gif", title: "Minecraft", href: "//minecraft.net" },
+    { src: "/badges/qc-88x31.gif", title: "Queercoded Webring", href: "//webring.queercoded.dev" },
+    { src: "/badges/transnow2.gif" },
+    { src: "/badges/ubuntu-88x31.gif", title: "Ubuntu", href: "//ubuntu.com/server" },
+    { src: "/badges/wikipedia.gif", title: "Wikipedia", href: "//donate.wikimedia.org/wiki/Special:FundraiserRedirector", },
+];
 ---
 
-<Badge src="/badges/88x31.gif" href="//cyber.dabamos.de/88x31" />
-<Badge src="/badges/bitwarden.gif" />
-<Badge src="/badges/button25.gif" />
-<Badge src="/badges/fedora.gif" href="//fedoraproject.org/spins/minimal/download" />
-<Badge src="/badges/firefox2.gif" />
-<Badge src="/badges/github-check.gif" href="//github.com/hazelthatsme" />
-<Badge src="/badges/gnu-linux.gif" href="//kernel.org" />
-<Badge src="/badges/google_stand.gif" />
-<Badge src="/badges/knbutton.gif" href="//kde.org" />
-<Badge src="/badges/internetprivacy.gif" />
-<Badge src="/badges/minecraft.gif" href="//minecraft.net" />
-<Badge src="/badges/qc-88x31.gif" href="//webring.queercoded.dev" />
-<Badge src="/badges/transnow2.gif" />
-<Badge src="/badges/ubuntu-88x31.gif" href="//ubuntu.com/server" />
-<Badge src="/badges/wikipedia.gif" href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector" />
+{badgeList.map((badge) => <Badge {...badge} />)}

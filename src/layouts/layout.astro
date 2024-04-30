@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css"
 import Badges from "../components/badges.astro";
 const { title, description, tags } = Astro.props;
 ---
@@ -15,91 +16,54 @@ const { title, description, tags } = Astro.props;
         <meta name="keywords" content={tags} />
     </head>
     <body>
-        <div id="content">
-            <header>
-                <span class="tag"><a href="/posts/2023-10-06">Hazel</a>, that's me.</span>
-                <div>
-                    <a href="/" title="My homepage">Home</a>
-                    |
-                    <a href="/projects" title="Projects I've worked on">Projects</a>
-                    |
-                    <a href="/resume" title="My resume in printable formats">Resume</a>
-                </div>
-            </header>
-            <main>
-                <slot />
-            </main>
-            <footer>
-                <i>Favicon by <a href="https://github.com/dvrossen">DvRossen</a></i>
+        <header>
+            <div class="title"><a href="/posts/2023-10-06">Hazel</a>, that's me.</div>
+            <div>
+                <a href="/" title="My homepage">Home</a>
+                |
+                <a href="/projects" title="Projects I've worked on">Projects</a>
+                |
+                <a href="/resume" title="My resume in printable formats">Resume</a>
+            </div>
+        </header>
+        <main>
+            <slot />
+        </main>
+        <footer>
+            <i>Favicon by <a href="https://github.com/dvrossen">DvRossen</a></i>
 
-                <div>
-                    <a
-                        href="https://webring.queercoded.dev/prev?source=hazelthats.me"
-                        >{`<-`}</a
-                    >
-                    <i>Part of the Queer Coded webring.</i>
-                    <a
-                        href="https://webring.queercoded.dev/next?source=hazelthats.me"
-                        >{`->`}</a
-                    >
-                </div>
+            <div class="webring">
+                <a
+                    href="https://webring.queercoded.dev/prev?source=hazelthats.me"
+                    >{`<-`}</a
+                >
+                <i>Part of the Queer Coded webring.</i>
+                <a
+                    href="https://webring.queercoded.dev/next?source=hazelthats.me"
+                    >{`->`}</a
+                >
+            </div>
 
-                <div class="badges">
-                    <Badges />
-                </div>
-            </footer>
-        </div>
+            <div class="badges">
+                <Badges />
+            </div>
+        </footer>
     </body>
 </html>
-<style is:global>
-    body {
-        background-color: black;
-        color: white;
-        font-family: monospace;
-        font-size: 16px;
-    }
 
-    #content {
-        margin: 1rem auto;
-        width: 90vw;
-        max-width: 1000px;
-    }
-
-    main {
-        margin: 5rem 0;
-    }
-
-    .tag {
+<style>
+    .title {
         font-size: 4rem;
         font-weight: bold;
+        margin-bottom: 1rem;
     }
 
-    header, footer {
-        text-align: center;
-    }
-    
-	.badges img {
-		margin: 5px;
-	}
-
-    a {
-        color: cyan;
+    .webring {
+        margin-bottom: 1rem;
     }
 
-    a:visited {
-        color: aquamarine;
+    .badges img {
+        margin: 5px;
     }
 
-    code {
-        background-color: gray;
-        color: white;
-    }
-
-    pre {
-        padding: 1em;
-    }
-
-    pre code {
-        background-color: transparent;
-    }
 </style>

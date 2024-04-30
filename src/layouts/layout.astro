@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css"
 import Badges from "../components/badges.astro";
 const { title, description, tags } = Astro.props;
 ---
@@ -49,55 +50,14 @@ const { title, description, tags } = Astro.props;
         </footer>
     </body>
 </html>
-<style is:global>
-    body {
-        background-color: black;
-        color: white;
-        font-family: monospace;
-        font-size: 16px;
-    }
 
-    header, main, footer {
-        margin: 1rem auto;
-        width: 90vw;
-        max-width: 1000px;
-    }
-
-    main {
-        padding: 5rem 0;
-    }
-
+<style>
     .tag {
         font-size: 4rem;
         font-weight: bold;
     }
 
-    header, footer {
-        text-align: center;
-    }
-    
-	.badges img {
-		margin: 5px;
-	}
-
-    a {
-        color: cyan;
-    }
-
-    a:visited {
-        color: aquamarine;
-    }
-
-    code {
-        background-color: gray;
-        color: white;
-    }
-
-    pre {
-        padding: 1em;
-    }
-
-    pre code {
-        background-color: transparent;
+    .badges img {
+        margin: 5px;
     }
 </style>

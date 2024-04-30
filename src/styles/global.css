@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+header,
+main,
+footer {
+  margin-inline: auto;
+  padding: 1rem;
+  max-width: 1000px;
+}
+
+main {
+  padding-block: 5rem;
+}
+header,
+footer {
+  text-align: center;
+}
+
+a {
+  color: cyan;
+}
+
+a:visited {
+  color: aquamarine;
+}
+
+code {
+  background-color: gray;
+  color: white;
+}
+
+pre {
+  padding: 1em;
+}
+
+pre code {
+  background-color: transparent;
+}

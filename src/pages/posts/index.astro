@@ -1,0 +1,14 @@
+---
+import Posts from "@/components/posts.astro";
+import Layout from "@/layouts/layout.astro";
+
+const meta = {
+    title: "Posts",
+    description: "Here's what I'm thinking about."
+}
+---
+
+<Layout {...meta}>
+	<h2>Here's what I'm thinking about.</h2>
+	<Posts />
+</Layout>

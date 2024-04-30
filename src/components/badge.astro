@@ -1,10 +1,23 @@
 ---
-const {src, href} = Astro.props;
+type Props = {
+    src: string;
+    title?: string;
+    href?: string;
+};
+const { src, title, href } = Astro.props;
 ---
 
-<a href={href} class="badge">
-    <img src={src} />
-</a>
+<span class="badge">
+{
+    href !== undefined ? (
+        <a href={href} aria-label={title} class="badge">
+            <img src={src} alt="" />
+        </a>
+    ) : (
+        <img src={src} alt="" />
+    )
+}
+</span>
 
 <style>
     a {

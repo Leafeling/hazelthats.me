@@ -11,4 +11,6 @@ I'm looking for a new workplace, and for opportunities to move out into the city
 I'm working on a [game about nothing](https://www.youtube.com/watch?v=QP6JRD8Zkx0), inspired by LSD Dream Emulator and the ƎNA web series. If completed, it will consist of an interconnected network of surreal dream worlds, traversable by rail and death.
 
 Talk to me about: Vivziepop cartoons, Minecraft, LEGO.<br>
+Currently playing: Risk of Rain 2, Helldivers 2, Overwatch 2.<br>
+Currently reading: Solitaire by Alice Oseman.<br>
 New watches: Neon Genesis Evangelion.

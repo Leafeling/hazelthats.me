@@ -10,7 +10,7 @@ const { src, title, href } = Astro.props;
 <span class="badge">
 {
     href !== undefined ? (
-        <a href={href} aria-label={title} class="badge">
+        <a rel="me" href={href} aria-label={title} class="badge">
             <img src={src} alt="" />
         </a>
     ) : (

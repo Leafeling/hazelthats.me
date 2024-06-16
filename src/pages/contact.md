@@ -1,4 +1,5 @@
 ---
+layout: "@/layouts/layout.astro"
 title: "Contact me"
 description: "How to get in contact with me."
 ---

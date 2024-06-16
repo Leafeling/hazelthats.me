@@ -1,5 +1,5 @@
 ---
-title: "Contact"
+title: "Contact me"
 description: "How to get in contact with me."
 ---
 Hey there! Thanks for trying to get in touch.

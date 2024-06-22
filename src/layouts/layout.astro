@@ -36,18 +36,6 @@ const { title, description, tags } = Astro.props;
         <footer>
             <i>Favicon by <a href="https://github.com/dvrossen">DvRossen</a></i>
 
-            <div class="webring">
-                <a
-                    href="https://webring.queercoded.dev/prev?source=hazelthats.me"
-                    >{`<-`}</a
-                >
-                <i>Part of the <a href="https://webring.queercoded.dev">Queer Coded webring</a>.</i>
-                <a
-                    href="https://webring.queercoded.dev/next?source=hazelthats.me"
-                    >{`->`}</a
-                >
-            </div>
-
             <div class="badges">
                 <Badges />
             </div>
@@ -62,12 +50,7 @@ const { title, description, tags } = Astro.props;
         margin-bottom: 1rem;
     }
 
-    .webring {
-        margin-bottom: 1rem;
-    }
-
     .badges img {
         margin: 5px;
     }
-
 </style>

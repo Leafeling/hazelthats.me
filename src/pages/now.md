@@ -1,16 +1,11 @@
 ---
 layout: "@/layouts/post.astro"
 title: "Now"
-pubDate: 2024-06-04
+pubDate: 2024-08-30
 description: "What's happening in my life right now, in accordance with specifications by https://www.nownownow.com/"
 author: 'Hazel Hofmann'
 tags: ['life', 'now', 'current']
 ---
-I'm looking for a new workplace, and for opportunities to move out into the city. The latter is unfortunately, _wonderfully_ rare.
+I got a new job! I start in October, I'll be fulfilling the role of "Junior Consultant", but I'll essentially just be a Linux system administrator. Looks like overobsessing with a piece of software for a couple years panned out after all! I'm really looking forward to it, the team seems amazing, and I'll be colleagues with one of my best friends of the recent years.
 
-I'm working on a [game about nothing](https://www.youtube.com/watch?v=QP6JRD8Zkx0), inspired by LSD Dream Emulator and the ƎNA web series. If completed, it will consist of an interconnected network of surreal dream worlds, traversable by rail and death.
-
-Talk to me about: Vivziepop cartoons, Minecraft, LEGO.<br>
-Currently playing: Risk of Rain 2, Helldivers 2, Overwatch 2.<br>
-Currently reading: Solitaire by Alice Oseman.<br>
-New watches: Neon Genesis Evangelion.
+I'm also looking forward to a major surgery, happening on September 2nd. This is one I've been waiting on since 2019. It'll take a lot of courage, nevermind a lot of recovery, but I'm sure it'll all have been worth it.

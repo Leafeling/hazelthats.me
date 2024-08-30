@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css"
 import Badges from "../components/badges.astro";
+import Friends from "../components/friends.astro";
 const { title, description, tags } = Astro.props;
 ---
 
@@ -34,10 +35,13 @@ const { title, description, tags } = Astro.props;
             <slot />
         </main>
         <footer>
-            <i>Favicon by <a href="https://github.com/dvrossen">DvRossen</a></i>
-
             <div class="badges">
                 <Badges />
+            </div>
+
+            <div class="friends">
+                Favicon by <a href="https://github.com/dvrossen">DvRossen</a><br>
+                <Friends />
             </div>
         </footer>
     </body>
@@ -53,4 +57,9 @@ const { title, description, tags } = Astro.props;
     .badges img {
         margin: 5px;
     }
+
+    .friends {
+        margin-top: 1rem;
+        display: block;
+    } 
 </style>

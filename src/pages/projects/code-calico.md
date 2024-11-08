@@ -1,6 +1,6 @@
 ---
 title: 'Code Calico'
-url: 'https://code-calico.github.io'
+url: 'https://codecalico.dev'
 url_text: 'Visit the GitHub page'
 image: /projects/code-calico.jpg
 order: 2

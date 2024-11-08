@@ -7,4 +7,4 @@ order: 2
 ---
 _Games made using C# with the Godot Engine. Site made with Astro._
 
-A collaboration between myself and a couple friends from the web, working together to make video games! Mostly concern myself with some project management, backend programming and playtesting.
+A collaboration between myself and a couple friends from the web, working together to make video games! I mostly concern myself with some project management, backend programming and playtesting.

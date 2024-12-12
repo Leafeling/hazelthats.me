@@ -2,9 +2,10 @@
 
 - name: Copy to var-www on hosts
   hosts: all
+  become: true
   tasks:
-    - copy:
+    - ansible.posix.synchronize:
         src: dist/
-        dest: nginx/frontend/
+        dest: /var/www/html/
 
 ...

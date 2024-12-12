@@ -1,0 +1,10 @@
+---
+
+- name: Copy to var-www on hosts
+  hosts: all
+  tasks:
+    - copy:
+        src: dist/
+        dest: nginx/frontend/
+
+...

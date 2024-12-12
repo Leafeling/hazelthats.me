@@ -2,10 +2,13 @@
 
 - name: Copy to var-www on hosts
   hosts: all
-  become: true
+  gather_facts: false
   tasks:
     - ansible.posix.synchronize:
         src: dist/
         dest: /var/www/html/
+        group: false
+        perms: false
+        times: false
 
 ...

@@ -7,8 +7,10 @@
     - ansible.posix.synchronize:
         src: dist/
         dest: /var/www/html/
+
         group: false
         perms: false
+        rsync_timeout: 10
         times: false
 
 ...

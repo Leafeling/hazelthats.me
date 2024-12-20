@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "astro build && LC_ALL=C.UTF-8 ansible-playbook -i inventory.ini deploy.yml"
+    "deploy": "astro build && LC_ALL=C.UTF-8 ansible-playbook -i inventory-prod.ini deploy.yml"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.5",
